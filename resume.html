@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswin K Ashok — Résumé</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 12mm 15mm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Calibri, "Segoe UI", Arial, Helvetica, sans-serif;
+            font-size: 10pt;
+            line-height: 1.3;
+            color: #000;
+            background: #fff;
+        }
+
+        .page {
+            max-width: 178mm;
+            margin: 0 auto;
+        }
+
+        @media screen {
+            body { padding: 14mm 0; }
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3mm;
+        }
+
+        h1 {
+            font-size: 20pt;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            line-height: 1.1;
+        }
+
+        .title {
+            font-size: 11.5pt;
+            margin-top: 1mm;
+        }
+
+        .contact {
+            margin-top: 1.5mm;
+            font-size: 9.8pt;
+        }
+
+        .contact span + span::before {
+            content: "|";
+            margin: 0 2mm;
+        }
+
+        h2 {
+            font-size: 10.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-bottom: 1px solid #000;
+            padding-bottom: 0.6mm;
+            margin: 3.6mm 0 1.6mm;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 4mm;
+        }
+
+        h3 {
+            font-size: 10.5pt;
+            font-weight: 700;
+        }
+
+        .meta {
+            font-style: italic;
+        }
+
+        ul {
+            margin: 1mm 0 0 5mm;
+        }
+
+        li {
+            margin-bottom: 0.8mm;
+        }
+
+        .item {
+            margin-bottom: 2mm;
+        }
+
+        .item p {
+            margin-top: 0.4mm;
+        }
+
+        .skills p {
+            margin-bottom: 0.8mm;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <header>
+            <h1>ASWIN K ASHOK</h1>
+            <div class="title">Node.js Backend Engineer</div>
+            <div class="contact">
+                <span>Kerala, India</span>
+                <span><a href="mailto:aswinkashok0@gmail.com">aswinkashok0@gmail.com</a></span>
+                <span><a href="https://www.linkedin.com/in/aswin-k-ashok/">linkedin.com/in/aswin-k-ashok</a></span>
+                <span><a href="https://github.com/Aswin-k-ashok">github.com/Aswin-k-ashok</a></span>
+            </div>
+        </header>
+
+        <h2>Summary</h2>
+        <p>Backend engineer with 4+ years building a multi-tenant SaaS platform for IT managed service providers,
+            covering APIs, PostgreSQL data models and the RabbitMQ events that keep billing, timesheet, reporting and
+            audit services consistent. Founding developer and largest contributor to the main backend API, with
+            2,400+ commits, ~35% of the current codebase and 66 database migrations.</p>
+
+        <h2>Experience</h2>
+        <div class="item">
+            <div class="row">
+                <h3>Founding Backend Engineer</h3>
+                <span>Aug 2022 – Present</span>
+            </div>
+            <div class="row">
+                <span class="meta">B2B SaaS company (MSP software)</span>
+                <span class="meta">Kerala, India</span>
+            </div>
+            <ul>
+                <li>Built the core ticket, customer, tenant sign-up and MFA APIs in Node.js, Express and PostgreSQL;
+                    this code is still ~35% of the live codebase.</li>
+                <li>Designed 66 schema migrations for a multi-tenant data model where every query is scoped to the
+                    tenant.</li>
+                <li>Delivered a public REST API and webhook system, and fixed cross-service gaps so API-created data
+                    reaches billing, timesheet, reporting and audit services.</li>
+                <li>Built a BullMQ/Redis bulk-onboarding pipeline with per-row retry, cancellation and progress
+                    reporting.</li>
+                <li>Owner and maintainer of the product's authentication system: sign-up, SSO, MFA and password reset.</li>
+                <li>Split a 7,200-line route file into route, service and data layers without changing behaviour.
+                </li>
+                <li>Wrote 128 test files (~38k lines) with Jest and supertest in 2026.</li>
+            </ul>
+        </div>
+
+        <h2>Selected Projects</h2>
+        <div class="item">
+            <div class="row">
+                <h3>Core Platform Backend</h3>
+                <span>2022 – Present</span>
+            </div>
+            <p>Built the core APIs and multi-tenant data model the product runs on, from the first commit. Learned
+                to design data that holds up as a product grows and to own production code long term.</p>
+        </div>
+        <div class="item">
+            <div class="row">
+                <h3>Authentication System (Owner &amp; Maintainer)</h3>
+                <span>2022 – Present</span>
+            </div>
+            <p>Built and maintain the product's authentication: sign-up, SSO, MFA, password reset and user
+                onboarding. Learned security-first design and how to run a system every user depends on.</p>
+        </div>
+        <div class="item">
+            <div class="row">
+                <h3>Public API &amp; Integrations</h3>
+                <span>2026</span>
+            </div>
+            <p>Built a public REST API and webhook system for third-party integrations. Learned event-driven design
+                and keeping data consistent across services.</p>
+        </div>
+        <div class="item">
+            <div class="row">
+                <h3>Bulk Data Onboarding</h3>
+                <span>2026</span>
+            </div>
+            <p>Built a background pipeline for importing large customer datasets. Learned job queues, retries and
+                building processes that fail safely.</p>
+        </div>
+
+        <h2>Skills</h2>
+        <div class="skills">
+            <p><b>Languages:</b> JavaScript (Node.js), SQL</p>
+            <p><b>Backend:</b> Node.js, Express, REST API design, Joi validation, Webhooks</p>
+            <p><b>Databases:</b> PostgreSQL, Knex.js (migrations, transactions, upserts, advisory locks), Redis</p>
+            <p><b>Messaging &amp; Queues:</b> RabbitMQ, BullMQ, MQTT, Agenda</p>
+            <p><b>Architecture:</b> Multi-tenant SaaS, event-driven microservices, layered (route → service →
+                repository)</p>
+            <p><b>Auth &amp; Identity:</b> Logto (SSO, magic link, MFA), Frontegg</p>
+            <p><b>Testing:</b> Jest, supertest</p>
+            <p><b>Other:</b> AWS S3, CSV/Excel import, email templating, timezone handling (dayjs, luxon), RMM
+                integration</p>
+        </div>
+
+        <h2>Education</h2>
+        <p><b>Bachelor of Computer Applications (BCA)</b></p>
+
+    </div>
+</body>
+
+</html>

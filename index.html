@@ -1,226 +1,426 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aswin K Ashok — Node.js Backend Engineer</title>
+    <meta name="description"
+        content="Aswin K Ashok is a Node.js backend engineer with 4+ years of experience building multi-tenant SaaS platforms, APIs, PostgreSQL data models and event-driven services.">
+    <meta name="theme-color" content="#0c0c0c">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E3A25F'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black,Arial' font-weight='900' font-size='30' fill='%23141414'%3EAK%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Malayalam:wght@800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/09a753dc3d.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">ASWIN K ASHOK.</a></div>
-            <ul class="menu">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#project">projects</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="top">
+        <div class="wrap nav__inner">
+            <a href="#hero" class="nav__logo">AKA<span class="dot"></span></a>
+            <nav aria-label="Primary">
+                <ul class="nav__menu" id="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact" class="nav__cta">Contact ↗</a></li>
+                </ul>
+            </nav>
+            <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span>
+            </button>
         </div>
-    </nav>
+    </header>
 
-    <!--home section-->
+    <main>
 
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text1">Hi I Am</div>
-                <div class="text-2">Aswin</div>
-                <div class="text-3">And I make <span class="typing"></span></div>
-            </div>
-        </div>
-    </section>
+        <!-- ============ HERO (bento) ============ -->
+        <section class="hero wrap" id="hero">
+            <div class="bento">
 
-    <!-- about section start -->
-
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="profile_pic.jpeg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Aswin</div>
-                    <p>
-                        A 22 year old passionate web developer from Aroor, Kerala. I am a Bca graduate and currently
-                        chasing my passion which is Doing creative things , that includes developing websites,software
-                        applications well as many other things. My goal is to nurture my passion and make an earning
-                        from it.There is My resume attached just below check that out if you are interested , And also
-                        don't forget to scroll down and see the rest of my website</p>
-                    <a href="https://drive.google.com/file/d/1Nr9jEtyAtybqGG5PM1DP8dHLw8Nw0v43/view?usp=sharing">my resume</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- service section start -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">services</h2>
-            <div class="serv-content">
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">web Design</div>
-                        <p>wire frames and template designs</p>
+                <!-- Photo card -->
+                <article class="card card--red hero__photo reveal">
+                    <div class="card__meta">
+                        <span class="mono">01</span>
+                        <span class="mono right">Backend<br>Engineer 2026</span>
                     </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-globe"></i>
-                        <div class="text">web Development</div>
-                        <p>scripting styling and hosting </p>
+                    <img src="profile_pic.png" alt="Portrait of Aswin K Ashok" class="duotone">
+                    <div class="glyph" lang="ml" aria-hidden="true">സൃഷ്ടി</div>
+                    <div class="card__foot">
+                        <span class="pill-dots"><i></i><i></i></span>
+                        <span class="mono">Kerala, India · IST</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-terminal"></i>
-                        <div class="text">app Development</div>
-                        <p>full stack web app Development</p>
+                <!-- Name card -->
+                <article class="card card--orange hero__name reveal">
+                    <div class="hero__top">
+                        <h1 class="wordmark">ASWIN K<br>ASHOK<span class="dot dot--red"></span></h1>
+                        <svg class="arrow" viewBox="0 0 100 100" aria-hidden="true">
+                            <path d="M22 12 H88 V78 H70 V43 L24 89 L11 76 L57 30 H22 Z" />
+                        </svg>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- skills section starting -->
-
-    <section>
-        <div class="skills" id="skills">
-            <div class="max-width">
-                <h2 class="title">My skills</h2>
-                <div class="skills-content">
-                    <div class="column left">
-                        <div class="text">My skills and expriences</div>
-                        <p>I'm a self motivated person intrigued to learn new things and gain some knowledge from it .I
-                            have done several projects using a verity of technologies and the following are the skill
-                            that now I posses </p>
+                    <div class="hero__mid">
+                        <div class="gauge" aria-hidden="true">
+                            <div class="gauge__bars">
+                                <span style="--h:62%"></span><span style="--h:88%"></span><span
+                                    style="--h:100%"></span><span style="--h:74%"></span>
+                            </div>
+                            <div class="gauge__labels mono"><span>A</span><span>P</span><span>I</span><span>S</span>
+                            </div>
+                        </div>
+                        <div class="readout">
+                            <div class="readout__head mono">NODE.JS BACKEND ENGINEER</div>
+                            <div class="readout__row">
+                                <span class="mono">YEARS ON<br>PLATFORM</span>
+                                <span class="readout__val">4+</span>
+                            </div>
+                            <div class="readout__row">
+                                <span class="mono">COMMITS<br>(ALL TIME)</span>
+                                <span class="readout__val">2,400+</span>
+                            </div>
+                        </div>
+                        <p class="hero__tagline">I build and maintain the backend of a multi-tenant SaaS platform:
+                            APIs, data models and the events that keep services in sync.</p>
                     </div>
-                    <div class="column right">
-                        <div class="box"><i class="fab fa-html5"></i> <br>
-                            <p>html</p>
-                        </div>
-                        <div class="box"><i class="fab fa-css3-alt"></i><br>
-                            <p>css</p>
-                        </div>
-                        <div class="box"><i class="fab fa-js-square"></i><br>
-                            <p>javascript</p>
-                        </div>
-                        <div class="box"><i class="fab fa-"></i><br>
-                            <p>python</p>
-                        </div>
-                        <div class="box"><i class="fas fa-database"></i><br>
-                            <p>database</p>
-                        </div>
-                        <div class="box"><i class="fab fa-react"></i><br>
-                            <p>react</p>
-                        </div>
-                        <div class="box"><i class="fab fa-github-square"></i><br>
-                            <p>git</p>
+
+                    <div class="hero__bottom">
+                        <span class="code">#NODE·PG·MQ</span>
+                        <span class="barcode" aria-hidden="true"></span>
+                        <div class="hero__ctas">
+                            <a href="#projects" class="btn btn--dark">View Projects ↓</a>
+                            <a href="Aswin-K-Ashok-Resume.pdf"
+                                class="btn btn--line" target="_blank" rel="noopener">Résumé ↗</a>
                         </div>
                     </div>
+                </article>
+
+                <!-- System card -->
+                <a href="#experience" class="card card--green hero__sys reveal">
+                    <div class="sys__panel">
+                        <div class="sys__title">
+                            <span>BKND SYSTM</span>
+                            <span class="mono">v4.0</span>
+                        </div>
+                        <div class="sys__body">
+                            <span class="mono">TENANT<br>SCOPED<br>EVENT DRIVEN</span>
+                            <span class="mono">©2022 → NOW</span>
+                        </div>
+                        <div class="sys__foot">
+                            <span class="sys__big">API/26</span>
+                            <span class="sys__icon" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Number card -->
+                <article class="card card--grey hero__num reveal">
+                    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+                        <path d="M20 4 L36 4 L36 20 Z M4 20 L20 4 L20 20 Z M20 20 L36 20 L20 36 Z" />
+                    </svg>
+                    <p class="num__label">Share of the live<br>codebase</p>
+                    <div class="num__big">3<span>5</span><sup>%</sup></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ STATS ============ -->
+        <section class="stats wrap" id="stats" aria-label="Key numbers">
+            <div class="stat reveal"><span class="mono">YEARS ON THE PLATFORM</span><strong>4+</strong></div>
+            <div class="stat reveal"><span class="mono">COMMITS</span><strong>2,400+</strong></div>
+            <div class="stat reveal"><span class="mono">DB MIGRATIONS</span><strong>66</strong></div>
+            <div class="stat reveal"><span class="mono">TEST FILES · 2026</span><strong>128</strong></div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="section wrap" id="about">
+            <header class="section__head reveal">
+                <span class="mono tag">02 / ABOUT</span>
+                <h2>The person behind<br>the API.</h2>
+            </header>
+            <div class="about">
+                <div class="about__text reveal">
+                    <p class="lead">I'm a backend engineer with 4+ years building a cloud platform that IT managed
+                        service providers (MSPs) use to run their business: support tickets, projects, scheduling,
+                        time tracking, billing and a client self-service portal.</p>
+                    <p>I was the founding developer on the main backend API and I'm still its largest contributor. I
+                        wrote ~30% of all commits and ~35% of the current code, and created 66 database migrations.
+                        My work centres on Node.js, Express and PostgreSQL, multi-tenant data design, and RabbitMQ
+                        events that keep billing, timesheet, reporting and audit services consistent.</p>
+                    <p>I enjoy understanding how complex systems behave, tracing problems across service
+                        boundaries, and turning fragile workflows into reliable backend processes.</p>
+                </div>
+                <aside class="card card--dark about__side reveal">
+                    <span class="mono tag">OFF THE CLOCK</span>
+                    <ul class="interests">
+                        <li><span class="sq sq--red"></span>Game development</li>
+                        <li><span class="sq sq--orange"></span>Gaming</li>
+                        <li><span class="sq sq--green"></span>Photography</li>
+                        <li><span class="sq sq--red"></span>Travel</li>
+                        <li><span class="sq sq--orange"></span>Reading</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section class="section wrap" id="experience">
+            <header class="section__head reveal">
+                <span class="mono tag">03 / EXPERIENCE</span>
+                <h2>Where I've been<br>building.</h2>
+            </header>
+
+            <article class="card card--grey job reveal">
+                <div class="job__head">
+                    <div>
+                        <span class="mono">AUG 2022 — PRESENT</span>
+                        <h3>Founding Backend Engineer</h3>
+                        <p class="job__co">B2B SaaS company · MSP software</p>
+                    </div>
+                    <span class="badge"><i></i>Current</span>
+                </div>
+                <p class="job__summary">Founding backend engineer on the main API of a multi-tenant ticketing and
+                    business-management platform for IT service providers.</p>
+                <ol class="job__list">
+                    <li>Built the core ticket, customer, tenant-sign-up and MFA APIs in Node.js, Express and
+                        PostgreSQL. Still ~35% of the live codebase.</li>
+                    <li>Designed 66 schema migrations for a multi-tenant data model where every query is scoped to
+                        the tenant.</li>
+                    <li>Delivered a public REST API and webhook system, and fixed cross-service gaps so API-created
+                        data reaches billing, timesheet, reporting and audit services.</li>
+                    <li>Built a BullMQ/Redis bulk-onboarding pipeline with per-row retry, cancellation and progress
+                        reporting.</li>
+                    <li>Owner and maintainer of the product's authentication system: sign-up, SSO, MFA and password reset.</li>
+                    <li>Split a 7,200-line route file into route, service and data layers without changing
+                        behaviour.</li>
+                    <li>Wrote 128 test files (~38k lines) with Jest and supertest in 2026.</li>
+                </ol>
+            </article>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section class="section wrap" id="projects">
+            <header class="section__head reveal">
+                <span class="mono tag">04 / PROJECTS</span>
+                <h2>Selected work.</h2>
+            </header>
+
+            <div class="projects">
+
+                <article class="card card--orange proj proj--wide reveal">
+                    <div class="proj__meta">
+                        <span class="mono">P/01 · 2022 – PRESENT</span>
+                        <span class="badge"><i></i>Live</span>
+                    </div>
+                    <h3>Core Platform Backend</h3>
+                    <p class="proj__role mono">Founding backend engineer</p>
+                    <dl>
+                        <dt class="mono">Built</dt>
+                        <dd>The core APIs and multi-tenant data model the product runs on, from the first commit.</dd>
+                        <dt class="mono">Learned</dt>
+                        <dd>How to design data that holds up as a product grows, and what it means to own production
+                            code for years.</dd>
+                    </dl>
+                    <ul class="tags">
+                        <li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Knex</li>
+                    </ul>
+                </article>
+
+                <article class="card card--red proj reveal">
+                    <div class="proj__meta">
+                        <span class="mono">P/02 · OWNER</span>
+                        <span class="badge"><i></i>Live</span>
+                    </div>
+                    <h3>Authentication System</h3>
+                    <p class="proj__role mono">Owner &amp; maintainer</p>
+                    <dl>
+                        <dt class="mono">Built</dt>
+                        <dd>The product's auth: sign-up, SSO, MFA, password reset and user onboarding.</dd>
+                        <dt class="mono">Learned</dt>
+                        <dd>Security-first thinking, working with identity providers, and owning a system every user
+                            depends on.</dd>
+                    </dl>
+                    <ul class="tags">
+                        <li>Logto</li><li>SSO</li><li>MFA</li>
+                    </ul>
+                </article>
+
+                <article class="card card--green proj reveal">
+                    <div class="proj__meta">
+                        <span class="mono">P/03 · 2026</span>
+                        <span class="badge"><i></i>Live</span>
+                    </div>
+                    <h3>Public API &amp; Integrations</h3>
+                    <dl>
+                        <dt class="mono">Built</dt>
+                        <dd>A public REST API and webhook system for third-party integrations.</dd>
+                        <dt class="mono">Learned</dt>
+                        <dd>Event-driven design and keeping data consistent across services.</dd>
+                    </dl>
+                    <ul class="tags">
+                        <li>REST</li><li>Webhooks</li><li>RabbitMQ</li>
+                    </ul>
+                </article>
+
+                <article class="card card--grey proj reveal">
+                    <div class="proj__meta">
+                        <span class="mono">P/04 · 2026</span>
+                        <span class="badge"><i></i>Live</span>
+                    </div>
+                    <h3>Bulk Data Onboarding</h3>
+                    <dl>
+                        <dt class="mono">Built</dt>
+                        <dd>A background pipeline for importing large customer datasets.</dd>
+                        <dt class="mono">Learned</dt>
+                        <dd>Job queues, retries and building processes that fail safely.</dd>
+                    </dl>
+                    <ul class="tags">
+                        <li>BullMQ</li><li>Redis</li>
+                    </ul>
+                </article>
+
+                <article class="card card--dark proj reveal">
+                    <div class="proj__meta">
+                        <span class="mono">P/05 · 2026</span>
+                        <span class="badge badge--wip"><i></i>Shipping soon</span>
+                    </div>
+                    <h3>Data Integrity Features</h3>
+                    <dl>
+                        <dt class="mono">Built</dt>
+                        <dd>Reversible record operations and unique per-tenant identifiers.</dd>
+                        <dt class="mono">Learned</dt>
+                        <dd>Concurrency, locking and transactions in PostgreSQL.</dd>
+                    </dl>
+                    <ul class="tags">
+                        <li>PostgreSQL</li><li>Concurrency</li>
+                    </ul>
+                </article>
+
+                <article class="card card--outline proj proj--side reveal">
+                    <div class="proj__meta">
+                        <span class="mono">SIDE / PWA</span>
+                        <span class="badge badge--wip"><i></i>In progress</span>
+                    </div>
+                    <div>
+                        <h3>Bin There</h3>
+                        <p>A progressive web app for helping people find nearby waste bins.</p>
+                    </div>
+                    <ul class="tags">
+                        <li>PWA</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section class="section wrap" id="skills">
+            <header class="section__head reveal">
+                <span class="mono tag">05 / SKILLS</span>
+                <h2>Toolkit.</h2>
+            </header>
+
+            <div class="skills">
+                <div class="skill reveal"><span class="mono">Languages</span>
+                    <ul class="tags"><li>JavaScript (Node.js)</li><li>SQL</li></ul>
+                </div>
+                <div class="skill reveal"><span class="mono">Backend</span>
+                    <ul class="tags"><li>Node.js</li><li>Express</li><li>REST API design</li><li>Joi</li><li>Webhooks</li></ul>
+                </div>
+                <div class="skill reveal"><span class="mono">Databases</span>
+                    <ul class="tags"><li>PostgreSQL</li><li>Knex.js</li><li>Transactions</li><li>Upserts</li><li>Advisory locks</li><li>Redis</li></ul>
+                </div>
+                <div class="skill reveal"><span class="mono">Messaging &amp; Queues</span>
+                    <ul class="tags"><li>RabbitMQ</li><li>BullMQ</li><li>MQTT</li><li>Agenda</li></ul>
+                </div>
+                <div class="skill reveal"><span class="mono">Architecture</span>
+                    <ul class="tags"><li>Multi-tenant SaaS</li><li>Event-driven microservices</li><li>Route → service → repository</li></ul>
+                </div>
+                <div class="skill reveal"><span class="mono">Auth &amp; Identity</span>
+                    <ul class="tags"><li>Logto (SSO, magic link, MFA)</li><li>Frontegg</li></ul>
+                </div>
+                <div class="skill reveal"><span class="mono">Testing</span>
+                    <ul class="tags"><li>Jest</li><li>supertest</li></ul>
+                </div>
+                <div class="skill reveal"><span class="mono">Other</span>
+                    <ul class="tags"><li>AWS S3</li><li>CSV/Excel import</li><li>Email templating</li><li>dayjs · luxon</li><li>RMM integration</li></ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- projects section start -->
-
-    <section class="project" id="project">
-        <div class="max-width">
-            <h2 class="title">My projects</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-
-                        <i class="fab fa-html5"></i>
-                        <div class="text">static HTML websites</div>
-                        <p>adding soon</p>
-                    </div>
+        <!-- ============ HIGHLIGHTS ============ -->
+        <section class="section wrap" id="highlights">
+            <header class="section__head reveal">
+                <span class="mono tag">06 / STRENGTHS</span>
+                <h2>How I work.</h2>
+            </header>
+            <div class="highlights">
+                <div class="hl reveal"><span class="hl__n">01</span>
+                    <h3>Long-term ownership</h3>
+                    <p>Founding developer, 4+ years of steady commits, largest author of the live codebase.</p>
                 </div>
-
-                <div class="card">
-                    <div class="box">
-
-                        <i class="fab fa-react"></i>
-                        <div class="text">react applications</div>
-                        <p>adding soon</p>
-                    </div>
+                <div class="hl reveal"><span class="hl__n">02</span>
+                    <h3>Data integrity</h3>
+                    <p>Fixed same-moment ID collisions, queries running outside their transaction, and invalid time
+                        ranges that broke later saves.</p>
                 </div>
-
-                <div class="card">
-                    <div class="box">
-
-                        <i class="fab fa-node"></i>
-                        <div class="text">MERN fullstack applications</div>
-                        <p>adding soon</p>
-                    </div>
+                <div class="hl reveal"><span class="hl__n">03</span>
+                    <h3>Event-driven systems</h3>
+                    <p>Trace missing events across services and rebuild exactly what each consumer expects.</p>
+                </div>
+                <div class="hl reveal"><span class="hl__n">04</span>
+                    <h3>Legacy refactoring</h3>
+                    <p>Split a 7,200-line file into clean layers without changing behaviour.</p>
+                </div>
+                <div class="hl reveal"><span class="hl__n">05</span>
+                    <h3>Clear technical writing</h3>
+                    <p>Commit messages written like small incident reports: what broke, why, what changed, what's
+                        intentionally left out.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- contact section -->
-    <section>
-        <div class="contact" id="contact">
-            <div class="max-width">
-                <h2 class="title">Contact me</h2>
-                <div class="text">
-                    <form action="">
-                        <input type="text" class="contactName" placeholder="YOUR NAME"></input>
-                        <input type="email" class="email" placeholder="EMAIL ID"> </input>
-                        <input type="number" class="mobile" placeholder="MOBILE NUMBER">
-                        <input type="text" class="subject" placeholder="SUBJECT"> </input>
-                        <input type="text" class="description" placeholder="message"> </input>
-                        <input type="submit" class="submit">
-                    
-                    </form>
-                    <p>Feel free to contact me at the following social platforms or leave an e-mail @
-                        aswinkashok0@gmail.com </p>
+        <!-- ============ CONTACT ============ -->
+        <section class="section wrap" id="contact">
+            <div class="card card--orange contact reveal">
+                <div class="contact__top">
+                    <span class="mono">07 / CONTACT</span>
+                    <span class="mono">KERALA, INDIA · IST (UTC+5:30)</span>
                 </div>
-
-                <div class="socioico">
-                    <a href="https://www.linkedin.com/in/aswin-k-ashok-99034b1b7/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/loner.____/"><i class="fab fa-instagram-square"></i></a>
-                    <a href="https://github.com/Aswin-k-ashok"><i class="fab fa-github-square"></i></a>
-                    <a href="https://www.facebook.com/aswinblock/"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://mail.google.com/"><i class="fab fa-google"></i></a>
+                <h2 class="contact__title">LET'S<br>TALK<span class="dot dot--red"></span></h2>
+                <p class="contact__blurb">Have a backend problem worth solving, or want to talk multi-tenant
+                    systems and event-driven design? My inbox is open.</p>
+                <div class="contact__links">
+                    <a href="mailto:aswinkashok0@gmail.com" class="clink">
+                        <span class="mono">EMAIL</span><span>aswinkashok0@gmail.com</span><b>↗</b>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aswin-k-ashok/" target="_blank" rel="noopener" class="clink">
+                        <span class="mono">LINKEDIN</span><span>in/aswin-k-ashok</span><b>↗</b>
+                    </a>
+                    <a href="https://github.com/Aswin-k-ashok" target="_blank" rel="noopener" class="clink">
+                        <span class="mono">GITHUB</span><span>Aswin-k-ashok</span><b>↗</b>
+                    </a>
+                    <a href="Aswin-K-Ashok-Resume.pdf"
+                        target="_blank" rel="noopener" class="clink">
+                        <span class="mono">RÉSUMÉ</span><span>View PDF</span><b>↗</b>
+                    </a>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- footer section -->
+    </main>
 
-    <footer>
-        <span>Designed and developed by <a href="#">Aswin k ashok</a> | <span class="far fa-copyright"></span>2021 All
-            rights reserved.</span>
+    <footer class="footer wrap">
+        <span class="mono">© 2026 Aswin K Ashok. Built with HTML &amp; CSS.</span>
+        <a href="#hero" class="mono">Back to top ↑</a>
     </footer>
-
 
     <script src="script.js"></script>
 </body>
