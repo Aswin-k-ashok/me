@@ -4,6 +4,14 @@
    wide grotesk display type + mono micro-labels.
    ========================================================= */
 
+/* Uroob by Swathanthra Malayalam Computing (SIL OFL) */
+@font-face {
+    font-family: "Uroob";
+    src: url("fonts/Uroob-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
 :root {
     --bg: #0c0c0c;
     --bg-2: #151515;
@@ -282,10 +290,11 @@ ol {
     position: relative;
     z-index: 2;
     margin-top: auto;
-    font-family: "Noto Sans Malayalam", var(--display);
-    font-weight: 800;
-    font-size: clamp(56px, 7vw, 92px);
-    line-height: 1.1;
+    /* previous: "Anek Malayalam", font-stretch 125%, weight 800, clamp(56px, 7vw, 92px) */
+    font-family: "Uroob", "Anek Malayalam", var(--display);
+    font-weight: 400;
+    font-size: clamp(84px, 10.5vw, 140px);
+    line-height: 1.05;
     color: var(--ink);
     letter-spacing: -0.02em;
 }
